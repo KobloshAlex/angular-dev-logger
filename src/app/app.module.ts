@@ -6,10 +6,11 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { LogFormComponent } from "./components/log-form/log-form.component";
 import { LogsComponent } from "./components/logs/logs.component";
 import { LogService } from "./sevices/log.service";
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, LogFormComponent, LogsComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [LogService],
   bootstrap: [AppComponent],
 })
